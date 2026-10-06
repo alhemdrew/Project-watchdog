@@ -85,7 +85,7 @@ The feed exposes relevant activity in a form that balances visibility with conte
 Each event can carry context, review state, and evidence without flattening everything into one certainty label.
 
 <p align="center">
-  <img src="docs/showcase/screenshots/event-detail.png" width="900" alt="Watchdog incident detail" />
+  <img src="docs/showcase/screenshots/event-details.png" width="900" alt="Watchdog incident detail" />
 </p>
 
 ### Reporting flow
