@@ -1,447 +1,655 @@
-<p align="center">
-  <img src="docs/showcase/branding/watchdog-mark.svg" width="96" alt="Watchdog" />
-</p>
+<div align="center">
 
-<h1 align="center">WATCHDOG</h1>
+<img src="docs/showcase/branding/watchdog-mark.svg" width="96" alt="Watchdog logo">
 
-<p align="center">
-  <strong>See what is happening. Understand what is changing. Know what has been verified.</strong>
-</p>
+<br>
 
-<p align="center">
-  A community security and incident intelligence platform built to turn fragmented reports into structured, contextual, and reviewable intelligence.
-</p>
+<a href="https://nextjs.org">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+</a>
+<a href="https://react.dev">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+</a>
+<a href="https://www.typescriptlang.org">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+</a>
+<a href="https://www.python.org">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+</a>
+<a href="https://fastapi.tiangolo.com">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+</a>
+<a href="https://www.postgresql.org">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+</a>
+<a href="https://postgis.net">
+  <img src="https://img.shields.io/badge/PostGIS-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostGIS">
+</a>
+<a href="https://redis.io">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
+</a>
+<a href="https://maplibre.org">
+  <img src="https://img.shields.io/badge/MapLibre-396CB2?style=for-the-badge" alt="MapLibre">
+</a>
+<a href="https://www.docker.com">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+</a>
+<a href="https://playwright.dev">
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright">
+</a>
 
-<p align="center">
-  <a href="#what-is-watchdog">What is Watchdog?</a> ·
-  <a href="#how-it-works">How it works</a> ·
-  <a href="#product">Product</a> ·
-  <a href="#trust-model">Trust model</a> ·
-  <a href="#technology">Technology</a>
-</p>
+<br><br>
 
-<br />
+# WATCHDOG
 
-<p align="center">
-  <img src="docs/showcase/screenshots/home.png" alt="Watchdog platform overview" width="900" />
-</p>
+### Community Security · Incident Intelligence · Geographic Awareness
 
-<p align="center">
-  <sub>Watchdog brings incident discovery, geographic context, reporting, and intelligence into one experience.</sub>
-</p>
+**Understand what is happening.
+See how information develops.
+Know what has been reviewed.**
+
+Watchdog is a global community security and incident intelligence platform built to transform fragmented reports, evidence, geographic signals, and human review into structured, contextual intelligence.
+
+<br>
+
+<a href="#product">Explore the Product</a>
+  •   <a href="#trust-model">Trust Model</a>
+  •   <a href="#technology">Technology</a>
+  •   <a href="#source-code">Source Code</a>
+
+<br><br>
+
+<img src="docs/showcase/screenshots/home.png"
+  width="920"
+  alt="Watchdog platform overview">
+
+<br>
+
+<sub>
+Incident intelligence · Geographic context · Evidence · Corroboration · Human verification
+</sub>
+
+</div>
+
+<br>
 
 ---
 
-## What is Watchdog?
+## The problem
 
-Watchdog is a **community security and incident intelligence platform** designed for a world where important information is increasingly fragmented across social networks, messaging platforms, local communities, media, and independent reports.
+When something important happens, information rarely arrives as one complete story.
 
-When an incident occurs, people often have pieces of the story — but not the full picture.
+A message appears in a community.
 
-One person reports it.
+Someone posts a location.
 
-Another shares evidence.
+Another person shares an image.
 
-Someone else reports something similar from nearby.
+A different source reports something similar.
 
-A source contradicts part of the story.
+Someone else disputes part of the story.
 
-Then the question becomes:
+The situation changes.
 
-**What should people actually understand from all of this?**
+The problem is no longer simply **finding information**.
 
-Watchdog is built around that problem.
+The problem is understanding:
 
-It provides a structured environment where people can **report, discover, connect, corroborate, review, and understand incidents over time.**
+* What was actually reported?
+* Where did it happen?
+* What evidence exists?
+* Which signals are related?
+* What information conflicts?
+* Has anyone reviewed it?
+* What is still uncertain?
+* What has changed since the original report?
+
+**Watchdog is built around those questions.**
 
 ---
 
-## From scattered signals to usable intelligence
+# What is Watchdog?
 
-Watchdog does not attempt to reduce every incident to a single confidence number.
+Watchdog is a **community security and incident intelligence platform** for turning fragmented information into a more structured and understandable picture of what is happening.
 
-Instead, it preserves the journey from an initial report to a reviewed outcome.
+It brings together:
 
-```text
-┌───────────┐
-│  REPORTED │
-└─────┬─────┘
-      ↓
-┌────────────┐
-│  REVIEWING │
-└─────┬──────┘
-      ↓
-┌───────────────┐
-│ CORROBORATED  │
-└──────┬────────┘
-       ↓
-┌────────────┐
-│  VERIFIED  │
-└─────┬──────┘
-      ↓
-┌──────────┐
-│  ACTIVE  │
-└────┬─────┘
-     ↓
-┌────────────┐
-│  RESOLVED  │
-└────────────┘
-```
+**Reports**
 
-Each stage communicates something different.
+People can submit structured information about incidents.
 
-A report is a **claim**.
+**Geographic context**
 
-Evidence is **supporting context**.
+Events can be understood in relation to places and surrounding activity.
 
-Corroboration provides **additional signals**.
+**Evidence**
 
-Verification is an **explicit human decision**.
+Supporting material can be associated with reports without automatically treating it as proof.
 
-Resolution describes the **state of the incident**.
+**Corroboration**
 
-That separation is fundamental to Watchdog.
+Related and independent signals can be connected to build a stronger picture.
+
+**Human review**
+
+Authorized reviewers can evaluate information and make explicit decisions.
+
+**Discovery**
+
+Users can search, explore maps, follow areas, and understand developing situations.
+
+The result is not simply another social feed.
+
+It is an **information system for situational awareness.**
 
 ---
 
 # Product
 
-## Discover what is happening
+## 🌍 Discover
 
-Watchdog makes incident discovery geographic and contextual.
+Watchdog starts with context.
 
-Users can explore activity around a particular area, move between local and broader views, search for relevant information, and understand incidents in relation to their surroundings.
+Users can explore incidents through location-aware feeds and geographic views, moving from a broad picture into specific events.
 
-<p align="center">
-  <img src="docs/showcase/screenshots/map.png" alt="Watchdog geographic intelligence map" width="820" />
-</p>
+<div align="center">
 
-<p align="center">
-  <sub>Geographic intelligence provides context instead of treating incidents as isolated posts.</sub>
-</p>
+<img src="docs/showcase/screenshots/map.png"
+  width="820"
+  alt="Watchdog geographic intelligence map">
 
----
+<br>
 
-## Follow the incident
+<sub>
+Geographic context helps users understand incidents in relation to surrounding activity.
+</sub>
 
-The incident feed brings reports together into a structured stream that can be explored progressively.
-
-Users can move from an initial signal into the underlying incident, its history, supporting information, and related activity.
-
-<p align="center">
-  <img src="docs/showcase/screenshots/events.png" alt="Watchdog incident feed" width="820" />
-</p>
+</div>
 
 ---
 
-## Understand the full context
+## 📰 Follow what is happening
 
-An incident should never be reduced to a headline.
+The incident feed provides a structured way to discover developing events without losing their surrounding context.
 
-Watchdog's incident experience brings together the available context around an event, including its status, location, supporting information, related signals, and review history.
+<div align="center">
 
-<p align="center">
-  <img src="docs/showcase/screenshots/event-detail.png" alt="Watchdog incident detail" width="820" />
-</p>
+<img src="docs/showcase/screenshots/events.png"
+  width="820"
+  alt="Watchdog incident feed">
 
----
-
-## Report what you know
-
-People closest to an event can contribute structured reports with geographic context and supporting material.
-
-The reporting workflow is designed to capture useful information while keeping the distinction between **submission** and **verification**.
-
-<p align="center">
-  <img src="docs/showcase/screenshots/reporting.png" alt="Watchdog incident reporting workflow" width="820" />
-</p>
+</div>
 
 ---
 
-## Search beyond the feed
+## 📍 Understand an incident
 
-Important information should not disappear simply because it is no longer the newest post.
+An incident is more than a headline.
 
-Watchdog provides search and discovery capabilities for navigating incidents, places, and relevant community information.
+Watchdog brings together the available status, location, supporting information, related signals, and review context.
 
-<p align="center">
-  <img src="docs/showcase/screenshots/search.png" alt="Watchdog search and discovery" width="820" />
-</p>
+<div align="center">
 
----
+<img src="docs/showcase/screenshots/event-detail.png"
+  width="820"
+  alt="Watchdog incident detail">
 
-# Trust model
-
-### Evidence is not truth.
-
-This is one of Watchdog's core principles.
-
-A photograph can provide useful context without proving every part of a claim.
-
-Multiple reports can strengthen an understanding of an event without making every detail certain.
-
-A moderator can verify an incident based on available information without claiming omniscience.
-
-Watchdog therefore avoids simplistic reputation scores and artificial "truth meters."
-
-Instead, it keeps the underlying information visible and reviewable.
-
-### The system distinguishes between:
-
-| Layer             | Purpose                                              |
-| ----------------- | ---------------------------------------------------- |
-| **Report**        | Records what someone claims happened                 |
-| **Evidence**      | Provides supporting material or context              |
-| **Corroboration** | Connects related or independent signals              |
-| **Conflict**      | Preserves disagreement between available information |
-| **Review**        | Records an authorized human assessment               |
-| **Verification**  | Represents an explicit review decision               |
-| **Resolution**    | Records the eventual state of the incident           |
-
-This makes uncertainty part of the product rather than something hidden from the user.
+</div>
 
 ---
 
-# Moderation & human review
+## 📝 Report
 
-Watchdog treats moderation as part of the intelligence system.
+People with relevant information can submit structured reports, provide geographic context, and attach supporting material where appropriate.
 
-Authorized reviewers can evaluate incidents, inspect supporting information, handle conflicting signals, make explicit review decisions, and preserve an auditable history of those decisions.
+<div align="center">
 
-<p align="center">
-  <img src="docs/showcase/screenshots/moderation.png" alt="Watchdog moderation and review workspace" width="820" />
-</p>
+<img src="docs/showcase/screenshots/reporting.png"
+  width="820"
+  alt="Watchdog incident reporting">
 
-<p align="center">
-  <sub>Human review remains explicit rather than being replaced by an opaque automated score.</sub>
-</p>
+</div>
 
----
+A report begins the information lifecycle.
 
-# Community context
-
-Security information does not exist in isolation.
-
-People discuss incidents, follow relevant areas, receive alerts, and contribute additional context.
-
-Watchdog keeps this community layer connected to the incident model without treating conversation itself as verification.
-
-<p align="center">
-  <img src="docs/showcase/screenshots/community.png" alt="Watchdog community experience" width="820" />
-</p>
+It does **not** automatically become a verified incident.
 
 ---
 
-# Personal intelligence
+# Trust Model
 
-The platform also provides user and trust context around participation, activity, and relevant information.
+## Evidence is not automatically truth.
 
-<p align="center">
-  <img src="docs/showcase/screenshots/profile.png" alt="Watchdog profile and trust context" width="820" />
-</p>
+This is one of Watchdog's central principles.
 
----
+A report is a claim.
 
-# Alerts that matter
+Evidence provides supporting context.
 
-Users can follow relevant areas and receive notifications as incidents and activity develop.
+Corroboration connects signals.
 
-<p align="center">
-  <img src="docs/showcase/screenshots/alerts.png" alt="Watchdog alerts and notifications" width="820" />
-</p>
+Human review creates an explicit decision.
 
----
+Watchdog therefore avoids reducing an incident to an arbitrary "truth score."
 
-# Architecture
+### The lifecycle
 
-Watchdog combines a modern web application, service layer, geospatial database, caching infrastructure, and automated testing into a platform designed for location-aware incident intelligence.
+<div align="center">
 
-<p align="center">
-  <img src="docs/showcase/architecture/watchdog-architecture.svg" alt="Watchdog architecture" width="820" />
-</p>
+|       🟦      |       🟨      |        🟪        |       🟩       |     🟥     |       ⬜      |
+| :-----------: | :-----------: | :--------------: | :------------: | :--------: | :----------: |
+|  **REPORTED** | **REVIEWING** | **CORROBORATED** |  **VERIFIED**  | **ACTIVE** | **RESOLVED** |
+| Initial claim |  Under review |  Related signals | Human decision |   Ongoing  |   Concluded  |
 
----
+</div>
 
-# Technology
+### What each layer means
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/PostGIS-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostGIS" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/MapLibre-396CB2?style=for-the-badge" alt="MapLibre" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright" />
-</p>
+| Layer                | Meaning                                           |
+| -------------------- | ------------------------------------------------- |
+| 📝 **Report**        | Someone has submitted a claim about an incident   |
+| 📎 **Evidence**      | Supporting material or contextual information     |
+| 🔗 **Corroboration** | Related or independent signals                    |
+| ⚠️ **Conflict**      | Information that does not fully agree             |
+| 👁️ **Review**       | An authorized human assessment                    |
+| 🛡️ **Verification** | An explicit review decision                       |
+| ✅ **Resolution**     | The incident has reached an appropriate end state |
 
-| Area           | Stack                        |
-| -------------- | ---------------------------- |
-| Web            | Next.js · React · TypeScript |
-| API            | Python · FastAPI             |
-| Data           | PostgreSQL · PostGIS         |
-| Infrastructure | Docker · Redis               |
-| Mapping        | MapLibre                     |
-| Testing        | pytest · Playwright          |
+This distinction matters.
+
+Watchdog is designed to let uncertainty remain visible rather than hiding it behind an artificial score.
+
+> **Trust is a process, not a number.**
 
 ---
 
-# Security & privacy
+# 🔎 Search & Discovery
 
-Watchdog is being built for a domain where information can become sensitive very quickly.
+Important information should not disappear simply because it is no longer the newest report.
 
-The system therefore separates public incident information from operational review context and applies authorization to sensitive workflows.
+Watchdog provides search and discovery capabilities for navigating incidents, locations, people, and relevant community information.
+
+<div align="center">
+
+<img src="docs/showcase/screenshots/search.png"
+  width="820"
+  alt="Watchdog search and discovery">
+
+</div>
+
+---
+
+# 🛡️ Moderation & Human Review
+
+Moderation is part of the intelligence system, not an afterthought.
+
+Authorized reviewers can inspect reports, supporting information, conflicts, verification decisions, and review history.
+
+<div align="center">
+
+<img src="docs/showcase/screenshots/moderation.png"
+  width="820"
+  alt="Watchdog moderation workspace">
+
+<br>
+
+<sub>
+Human review remains explicit, contextual, and auditable.
+</sub>
+
+</div>
+
+Watchdog's review model is designed around:
+
+* explicit decisions
+* controlled authorization
+* geographic scope where applicable
+* review history
+* revocation
+* successor decisions
+* public redaction
+* auditability
+
+Historical decisions are not silently erased.
+
+---
+
+# 👥 Community
+
+Security intelligence does not exist in isolation.
+
+People discuss incidents, contribute additional context, follow relevant areas, and receive notifications as situations develop.
+
+<div align="center">
+
+<img src="docs/showcase/screenshots/community.png"
+  width="820"
+  alt="Watchdog community experience">
+
+</div>
+
+Community participation remains distinct from verification.
+
+A discussion can provide useful context without becoming a verification decision.
+
+---
+
+# 🔔 Alerts & Watch Areas
+
+Users can follow relevant locations and stay informed as incidents and activity develop.
+
+<div align="center">
+
+<img src="docs/showcase/screenshots/alerts.png"
+  width="820"
+  alt="Watchdog alerts and notifications">
+
+</div>
+
+The goal is not to overwhelm people with notifications.
+
+It is to surface information that is relevant to the areas and events they care about.
+
+---
+
+# 👤 Identity & Trust Context
+
+Watchdog also provides context around user participation and trust-related information without reducing people to a simplistic popularity or reputation score.
+
+<div align="center">
+
+<img src="docs/showcase/screenshots/profile.png"
+  width="820"
+  alt="Watchdog profile and trust context">
+
+</div>
+
+---
+
+# 🧠 Watchdog Intelligence
+
+The next evolution of the platform is an intelligence layer built directly over Watchdog's incident, geographic, corroboration, and community data.
+
+Rather than becoming a generic chatbot, **Watchdog Intelligence** is intended to provide contextual answers grounded in the platform itself.
+
+For example:
+
+```text
+"What's happening around this area?"
+
+"Which reports are connected to this incident?"
+
+"What information conflicts with the current picture?"
+
+"Has this situation changed recently?"
+
+"Summarize the recent security activity in this region."
+
+"Give me a briefing on this incident."
+```
+
+The intelligence layer should help people **understand the information already present in the system** rather than simply generating another layer of unverified content.
+
+---
+
+# 🏗️ Architecture
+
+<div align="center">
+
+<img src="docs/showcase/architecture/watchdog-architecture.svg"
+  width="820"
+  alt="Watchdog architecture">
+
+</div>
+
+Watchdog combines a modern web application, service layer, relational and geospatial data, caching infrastructure, mapping, and automated testing.
+
+The architecture is designed around:
+
+* structured incident data
+* geographic relationships
+* evidence and source references
+* corroboration
+* review workflows
+* authorization
+* auditable decisions
+* scalable discovery
+
+---
+
+# ⚙️ Technology
+
+<div align="center">
+
+### FRONTEND
+
+<a href="https://nextjs.org">
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" height="32">
+</a>
+<a href="https://react.dev">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" height="32">
+</a>
+<a href="https://www.typescriptlang.org">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" height="32">
+</a>
+
+<br><br>
+
+### BACKEND
+
+<a href="https://www.python.org">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="32">
+</a>
+<a href="https://fastapi.tiangolo.com">
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" height="32">
+</a>
+
+<br><br>
+
+### DATA & GEOSPATIAL
+
+<a href="https://www.postgresql.org">
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" height="32">
+</a>
+<a href="https://postgis.net">
+<img src="https://img.shields.io/badge/PostGIS-336791?style=for-the-badge&logo=postgresql&logoColor=white" height="32">
+</a>
+<a href="https://redis.io">
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" height="32">
+</a>
+
+<br><br>
+
+### INFRASTRUCTURE & TESTING
+
+<a href="https://www.docker.com">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" height="32">
+</a>
+<a href="https://maplibre.org">
+<img src="https://img.shields.io/badge/MapLibre-396CB2?style=for-the-badge" height="32">
+</a>
+<a href="https://playwright.dev">
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" height="32">
+</a>
+<a href="https://pytest.org">
+<img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" height="32">
+</a>
+
+</div>
+
+<br>
+
+| Layer                        | Technology                   |
+| ---------------------------- | ---------------------------- |
+| **Web**                      | Next.js · React · TypeScript |
+| **API**                      | Python · FastAPI             |
+| **Database**                 | PostgreSQL                   |
+| **Geospatial**               | PostGIS                      |
+| **Caching & infrastructure** | Redis · Docker               |
+| **Mapping**                  | MapLibre                     |
+| **Testing**                  | pytest · Playwright          |
+
+---
+
+# 🔐 Security & Privacy
+
+Watchdog is designed for a domain where information can become sensitive very quickly.
+
+The platform therefore separates public information from operational review context and applies authorization to sensitive workflows.
 
 The design considers:
 
-* geographic access boundaries
-* moderation permissions
-* review history
-* evidence visibility
-* user identity
-* public redaction
-* auditability
-* conflicting information
-* immutable review decisions
+| Area                    | Approach                                               |
+| ----------------------- | ------------------------------------------------------ |
+| 🔒 **Authorization**    | Controlled access to sensitive operations              |
+| 📍 **Geographic scope** | Location-aware access where required                   |
+| 👤 **Identity**         | Separation of user identity and public information     |
+| 📎 **Evidence**         | Controlled visibility and contextual handling          |
+| 🛡️ **Moderation**      | Authorized review workflows                            |
+| 📜 **Auditability**     | Review decisions remain traceable                      |
+| ⚠️ **Conflicts**        | Disagreement can remain visible                        |
+| 🔏 **Redaction**        | Public-facing information can be appropriately limited |
 
-The objective is not simply to collect more information.
+The objective is simple:
 
-It is to make the **right information available to the right people at the right level of context.**
-
----
-
-# What's next?
-
-Watchdog is being developed in layers.
-
-### Built
-
-* Core platform
-* Authentication & user system
-* Incident reporting
-* Incident lifecycle
-* Geographic intelligence
-* Maps & feeds
-* Watch areas & notifications
-* Evidence & source references
-* Corroboration & contradiction handling
-* Human verification
-* Moderation & trust
-* Search & discovery
-
-### Next
-
-**Organizations & Official Sources**
-
-Connect organizations and trusted institutional sources to the intelligence model.
-
-**External Intelligence**
-
-Bring relevant external information into Watchdog while preserving the distinction between external signals and verified platform decisions.
-
-**Regional Intelligence**
-
-Build deeper regional understanding, patterns, and localized intelligence.
-
-**Watchdog Intelligence**
-
-A persistent intelligence layer over the platform's underlying data.
-
-It will be designed to answer questions such as:
-
-> Is this area experiencing unusual activity?
-
-> What happened here today?
-
-> Which reports are corroborating this incident?
-
-> What information conflicts with the current picture?
-
-> Give me a brief intelligence summary of this region.
-
-This is not intended to become another generic chatbot.
-
-**It is intended to become an intelligence interface for Watchdog's own data, context, and verification model.**
+> **Expose the right context to the right people.**
 
 ---
 
-# Why is the source code private?
+# 🚀 Roadmap
 
-The implementation of Watchdog is currently maintained in a private repository.
+<div align="center">
 
-That decision is deliberate.
+### FOUNDATION
 
-Watchdog is an actively developed security platform, and exposing the complete implementation prematurely would reveal internal architecture, security controls, development infrastructure, unreleased functionality, and operational details that are better protected while the product is still evolving.
+| Status | Capability                     |
+| :----: | ------------------------------ |
+|   🟢   | Core Platform                  |
+|   🟢   | Authentication & Users         |
+|   🟢   | Incident Reporting             |
+|   🟢   | Incident Lifecycle             |
+|   🟢   | Maps & Geographic Intelligence |
+|   🟢   | Watch Areas & Notifications    |
 
-Keeping the source private does **not** mean the project is closed to technical scrutiny.
+### TRUST & DISCOVERY
 
-This public repository documents the product, its architecture, principles, technology, and direction.
+| Status | Capability                    |
+| :----: | ----------------------------- |
+|   🟢   | Evidence & Source References  |
+|   🟢   | Corroboration & Contradiction |
+|   🟢   | Human Verification            |
+|   🟢   | Moderation & Trust            |
+|   🟢   | Search & Discovery            |
 
-For legitimate technical review, security assessment, research, collaboration, or partnership, **source-code access can be requested directly from the project author.**
+### INTELLIGENCE
 
-Requests may be reviewed individually based on the purpose and scope of the review.
+| Status | Capability                       |
+| :----: | -------------------------------- |
+|   🔵   | Organizations & Official Sources |
+|   🔵   | External Intelligence            |
+|   🔵   | Regional Intelligence            |
+|   🟣   | Watchdog Intelligence            |
 
-The goal is to maintain a responsible balance between:
-
-**Transparency.
-Security.
-Intellectual property.
-Responsible disclosure.**
+</div>
 
 ---
 
-# About this repository
+# 🔐 Source Code
+
+## Why is the source code private?
+
+The active Watchdog implementation is maintained in a private repository.
+
+This is a deliberate decision.
+
+Watchdog is a security-focused platform under active development. Publishing the complete implementation while the product is still evolving would expose internal architecture, security-sensitive controls, development infrastructure, unreleased functionality, operational workflows, and implementation details that should remain protected.
+
+The private repository also allows development to continue without unnecessarily exposing unfinished systems or security-sensitive implementation choices.
+
+### Private does not mean unreviewable.
+
+The public repository provides visibility into:
+
+* the product
+* the architecture
+* the technology stack
+* the trust model
+* the design philosophy
+* the product capabilities
+* the roadmap
+
+For serious technical evaluation, security assessment, architecture review, research, collaboration, or partnership discussions, **source-code access can be requested.**
+
+Requests can be considered individually based on the purpose and scope of the review.
+
+> **The implementation is private. The product direction is not.**
+
+---
+
+# 📦 About this Repository
 
 This repository is the **public Watchdog showcase**.
 
-It contains selected product visuals, product documentation, architectural context, and the public story behind the platform.
+### Included
 
-It does not contain the private application implementation.
+* Product overview
+* Brand assets
+* Selected product screenshots
+* Architecture visuals
+* Technology information
+* Product principles
+* Roadmap
 
-That means you will not find:
+### Not included
 
-* production source code
-* private APIs
-* credentials or secrets
-* environment configuration
-* production databases
-* internal operational tooling
-* unreleased implementation details
+* Private application source
+* Production credentials
+* Environment secrets
+* Private databases
+* Internal infrastructure
+* Operational tooling
+* Unreleased implementation details
 
-The public repository exists to let people **understand and evaluate the product without exposing the systems that operate it.**
+The purpose of this repository is to make Watchdog understandable and publicly reviewable **without exposing the systems that power it.**
 
 ---
 
-# The vision
+# 🌍 Built for a Global Problem
 
-Security information is everywhere.
+Watchdog is not tied to one country, city, or incident category.
 
-Context is not.
+The underlying problem is universal:
 
-Watchdog is being built to close that gap.
+**How can communities understand rapidly changing security information without losing context, evidence, geography, or accountability?**
 
-Not by claiming to know everything.
+That problem exists across borders.
 
-Not by turning uncertainty into a score.
+Watchdog is being designed accordingly.
 
-Not by replacing human judgment with a black box.
+---
 
-But by giving people better tools to **report, connect, investigate, corroborate, review, and understand what is happening around them.**
+<div align="center">
 
-<br />
+<br>
 
-<p align="center">
-  <img src="docs/showcase/watchdog-map-card.svg" alt="Watchdog intelligence" width="720" />
-</p>
+<img src="docs/showcase/watchdog-map-card.svg"
+  width="680"
+  alt="Watchdog intelligence">
 
-<p align="center">
-  <strong>WATCHDOG</strong><br />
-  <sub>Community security · Incident intelligence · Geographic context</sub>
-</p>
+<br><br>
 
-<p align="center">
-  <sub>Built for communities. Designed to scale globally.</sub>
-</p>
+# WATCHDOG
+
+### Community Security · Incident Intelligence · Geographic Context
+
+<br>
+
+<strong>REPORT · CONNECT · CORROBORATE · UNDERSTAND</strong>
+
+<br><br>
+
+<sub>
+Built with a global vision.
+</sub>
+
+</div>
