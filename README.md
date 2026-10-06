@@ -77,7 +77,7 @@ The map layer turns scattered reports into a navigable picture of local conditio
 The feed exposes relevant activity in a form that balances visibility with context and status.
 
 <p align="center">
-  <img src="docs/showcase/screenshots/events.png" width="900" alt="Watchdog event feed" />
+  <img src="docs/showcase/screenshots/event.png" width="900" alt="Watchdog event feed" />
 </p>
 
 ### Incident detail
