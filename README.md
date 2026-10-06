@@ -60,8 +60,9 @@ Watchdog is a global community security and incident intelligence platform built
 <br><br>
 
 <img src="docs/showcase/screenshots/home.png"
-  width="920"
-  alt="Watchdog platform overview">
+  width="700"
+  alt="Watchdog platform overview"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 <br>
 
@@ -155,8 +156,9 @@ Users can explore incidents through location-aware feeds and geographic views, m
 <div align="center">
 
 <img src="docs/showcase/screenshots/map.png"
-  width="820"
-  alt="Watchdog geographic intelligence map">
+  width="680"
+  alt="Watchdog geographic intelligence map"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 <br>
 
@@ -175,8 +177,9 @@ The incident feed provides a structured way to discover developing events withou
 <div align="center">
 
 <img src="docs/showcase/screenshots/events.png"
-  width="820"
-  alt="Watchdog incident feed">
+  width="680"
+  alt="Watchdog incident feed"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -191,8 +194,9 @@ Watchdog brings together the available status, location, supporting information,
 <div align="center">
 
 <img src="docs/showcase/screenshots/event-detail.png"
-  width="820"
-  alt="Watchdog incident detail">
+  width="680"
+  alt="Watchdog incident detail"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -205,8 +209,9 @@ People with relevant information can submit structured reports, provide geograph
 <div align="center">
 
 <img src="docs/showcase/screenshots/reporting.png"
-  width="820"
-  alt="Watchdog incident reporting">
+  width="680"
+  alt="Watchdog incident reporting"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -272,8 +277,9 @@ Watchdog provides search and discovery capabilities for navigating incidents, lo
 <div align="center">
 
 <img src="docs/showcase/screenshots/search.png"
-  width="820"
-  alt="Watchdog search and discovery">
+  width="680"
+  alt="Watchdog search and discovery"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -288,8 +294,9 @@ Authorized reviewers can inspect reports, supporting information, conflicts, ver
 <div align="center">
 
 <img src="docs/showcase/screenshots/moderation.png"
-  width="820"
-  alt="Watchdog moderation workspace">
+  width="680"
+  alt="Watchdog moderation workspace"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 <br>
 
@@ -323,8 +330,9 @@ People discuss incidents, contribute additional context, follow relevant areas, 
 <div align="center">
 
 <img src="docs/showcase/screenshots/community.png"
-  width="820"
-  alt="Watchdog community experience">
+  width="680"
+  alt="Watchdog community experience"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -341,8 +349,9 @@ Users can follow relevant locations and stay informed as incidents and activity 
 <div align="center">
 
 <img src="docs/showcase/screenshots/alerts.png"
-  width="820"
-  alt="Watchdog alerts and notifications">
+  width="680"
+  alt="Watchdog alerts and notifications"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -359,8 +368,9 @@ Watchdog also provides context around user participation and trust-related infor
 <div align="center">
 
 <img src="docs/showcase/screenshots/profile.png"
-  width="820"
-  alt="Watchdog profile and trust context">
+  width="680"
+  alt="Watchdog profile and trust context"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -397,8 +407,9 @@ The intelligence layer should help people **understand the information already p
 <div align="center">
 
 <img src="docs/showcase/architecture/watchdog-architecture.svg"
-  width="820"
-  alt="Watchdog architecture">
+  width="680"
+  alt="Watchdog architecture"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 </div>
 
@@ -633,8 +644,9 @@ Watchdog is being designed accordingly.
 <br>
 
 <img src="docs/showcase/watchdog-map-card.svg"
-  width="680"
-  alt="Watchdog intelligence">
+  width="500"
+  alt="Watchdog intelligence"
+  style="display: block; max-width: 100%; height: auto; margin: 0 auto 16px; border-radius: 14px; box-shadow: 0 18px 42px rgba(13, 19, 33, 0.18);">
 
 <br><br>
 
