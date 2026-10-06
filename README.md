@@ -142,7 +142,7 @@ User context and trust signals give the platform a clearer sense of contributor 
 </div>
 
 <div align="center">
-  <img src="docs/showcase/screenshots/events.png" width="48%" alt="Event feed" />
+  <img src="docs/showcase/screenshots/event.png" width="48%" alt="Event feed" />
   <img src="docs/showcase/screenshots/profile.png" width="48%" alt="Profile and trust context" />
 </div>
 
