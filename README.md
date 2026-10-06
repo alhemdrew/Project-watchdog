@@ -117,7 +117,7 @@ Trust is operational. Review, escalation, and contributor standing are not treat
 Community discussion and notifications remain distinct from verified fact and review outcomes.
 
 <div align="center">
-  <img src="docs/showcase/screenshots/community.png" width="45%" alt="Watchdog community" />
+  <img src="docs/showcase/screenshots/mutiny.png" width="45%" alt="Watchdog community" />
   <img src="docs/showcase/screenshots/alerts.png" width="45%" alt="Watchdog alerts" />
 </div>
 
